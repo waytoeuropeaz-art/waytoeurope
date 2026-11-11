@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>waytoeurope.az – İmkanlar</title>
+<style>
+:root{--bg:#f8f9fc;--card:#fff;--ink:#14213d;--muted:#5a6483;--blue:#1b3f94;--star:#f2b705;--line:#dde2ef;--dark:#14213d;--ok:#12805c;--no:#8a93ad;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1630;--card:#162247;--ink:#eef1fb;--muted:#a9b4d4;--blue:#8aa6ff;--line:#2a3a6b;--dark:#f2b705;--ok:#4cd6a0;--no:#7f8aad}}
+:root[data-theme="dark"]{--bg:#0e1630;--card:#162247;--ink:#eef1fb;--muted:#a9b4d4;--blue:#8aa6ff;--line:#2a3a6b;--dark:#f2b705;--ok:#4cd6a0;--no:#7f8aad}
+html{scroll-padding-top:70px;scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--star);outline-offset:2px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:20px;height:64px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:800;text-decoration:none;font-size:18px}
+.logo img{width:40px;height:40px;border-radius:8px;background:#fff}
+nav{display:flex;gap:22px;margin-left:12px;flex:1}
+nav a{text-decoration:none;color:var(--muted);padding:4px 0;border-bottom:2px solid transparent}
+nav a:hover{color:var(--ink);border-color:var(--star)}
+.icon{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;font-size:18px}
+.cta{background:var(--dark);color:var(--bg);padding:10px 20px;border-radius:999px;text-decoration:none;font-weight:700;white-space:nowrap}
+:root:not([data-theme="dark"]) .cta{color:#f2b705}
+section{padding:48px 0}
+h1,h2{margin:0;letter-spacing:-.02em}
+h1{font-size:clamp(34px,6vw,52px);line-height:1.1}
+h2{font-size:clamp(26px,4vw,34px)}
+.sub{color:var(--muted);margin:8px 0 0}
+.bar{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0}
+.bar input,.bar select{padding:11px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);font:inherit}
+.bar input{flex:1;min-width:200px}
+.chip{padding:11px 16px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);font:inherit;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#fff}
+:root[data-theme="dark"] .chip[aria-pressed="true"]{color:#0e1630}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:22px;display:flex;flex-direction:column;gap:10px}
+.card.closed{opacity:.65}
+.top{display:flex;align-items:center;gap:8px}
+.tag{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:3px 12px;font-size:14px}
+.sp{flex:1}
+.heart{border:0;background:none;font-size:22px;cursor:pointer;color:var(--ink)}
+.card h3{margin:4px 0 0;font-size:20px;line-height:1.25}
+.meta{color:var(--muted);font-size:15px;display:grid;gap:2px}
+.st{font-weight:700}.st.open{color:var(--ok)}.st.shut{color:var(--no)}
+.card a.more{margin-top:auto;text-decoration:none;font-weight:700;color:var(--blue)}
+.empty{padding:32px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:16px}
+ol{padding-left:22px;max-width:70ch}ol li{margin:0 0 12px}ol b{display:block}
+.note{background:var(--card);border-left:4px solid var(--star);padding:14px 16px;border-radius:0 12px 12px 0;max-width:70ch}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}
+@media (max-width:760px){nav{display:none}header .wrap{gap:10px}.logo{flex:1}}
+
+.hero{display:grid;grid-template-columns:1fr;gap:32px;align-items:center;padding:56px 0 24px}
+.hero h1{margin-bottom:14px}
+.hero .sub{font-size:18px;max-width:46ch;margin-bottom:24px}
+.hero img{width:100%;max-width:380px;justify-self:center;border-radius:24px;background:#fff;border:1px solid var(--line)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin:32px 0 8px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 18px}
+.stat b{display:block;font-size:28px;color:var(--blue)}
+.stat span{color:var(--muted);font-size:14px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:22px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px}
+.box h3{margin:0 0 6px;font-size:19px}.box p{margin:0;color:var(--muted)}
+.band{background:var(--blue);color:#fff;border-radius:28px;padding:36px;display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:24px 0}
+:root[data-theme="dark"] .band{color:#0e1630}
+.band h2{max-width:20ch}
+:root:root .band .cta{background:#f2b705;color:#14213d}
+details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}
+details p{margin:10px 0 0;color:var(--muted)}
+section{padding:36px 0}
+@media (max-width:760px){.hero{grid-template-columns:1fr;padding-top:28px}.hero img{order:-1;max-width:260px}}
+</style>
+<style>
+header{background:color-mix(in srgb,var(--bg) 82%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.hero{position:relative;overflow:hidden;margin-top:28px;padding:64px 48px;border-radius:36px;background:radial-gradient(circle at 88% 15%,rgba(242,183,5,.28),transparent 42%),linear-gradient(135deg,#1b3f94,#0c1b4d);color:#fff}
+.hero>*{position:relative;z-index:1}
+.hero::after{content:"";position:absolute;right:-70px;top:50%;width:380px;height:380px;transform:translateY(-50%);background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Cpolygon%20points%3D%22100.0%2C10.0%20102.9%2C18.0%20111.4%2C18.3%20104.8%2C23.5%20107.1%2C31.7%20100.0%2C27.0%2092.9%2C31.7%2095.2%2C23.5%2088.6%2C18.3%2097.1%2C18.0%22%20fill%3D%22%23f2b705%22/%3E%3Cpolygon%20points%3D%22139.0%2C20.5%20141.9%2C28.4%20150.4%2C28.7%20143.8%2C34.0%20146.1%2C42.2%20139.0%2C37.5%20131.9%2C42.2%20134.2%2C34.0%20127.6%2C28.7%20136.1%2C28.4%22%20fill%3D%22%23f2b705%22/%3E%3Cpolygon%20points%3D%22167.5%2C49.0%20170.5%2C57.0%20179.0%2C57.3%20172.3%2C62.5%20174.6%2C70.7%20167.5%2C66.0%20160.5%2C70.7%20162.8%2C62.5%20156.1%2C57.3%20164.6%2C57.0%22%20fill%3D%22%23f2b705%22/%3E%3Cpolygon%20points%3D%22178.0%2C88.0%20180.9%2C96.0%20189.4%2C96.3%20182.8%2C101.5%20185.1%2C109.7%20178.0%2C105.0%20170.9%2C109.7%20173.2%2C101.5%20166.6%2C96.3%20175.1%2C96.0%22%20fill%3D%22%23f2b705%22/%3E%3Cpolygon%20points%3D%22167.5%2C127.0%20170.5%2C135.0%20179.0%2C135.3%20172.3%2C140.5%20174.6%2C148.7%20167.5%2C144.0%20160.5%2C148.7%20162.8%2C140.5%20156.1%2C135.3%20164.6%2C135.0%22%20fill%3D%22%23f2b705%22/%3E%3Cpolygon%20points%3D%22139.0%2C155.5%20141.9%2C163.5%20150.4%2C163.8%20143.8%2C169.1%20146.1%2C177.3%20139.0%2C172.5%20131.9%2C177.3%20134.2%2C169.1%20127.6%2C163.8%20136.1%2C163.5%22%20fill%3D%22%23f2b705%22/%3E%3Cpolygon%20points%3D%22100.0%2C166.0%20102.9%2C174.0%20111.4%2C174.3%20104.8%2C179.5%20107.1%2C187.7%20100.0%2C183.0%2092.9%2C187.7%2095.2%2C179.5%2088.6%2C174.3%2097.1%2C174.0%22%20fill%3D%22%23f2b705%22/%3E%3Cpolygon%20points%3D%2261.0%2C155.5%2063.9%2C163.5%2072.4%2C163.8%2065.8%2C169.1%2068.1%2C177.3%2061.0%2C172.5%2053.9%2C177.3%2056.2%2C169.1%2049.6%2C163.8%2058.1%2C163.5%22%20fill%3D%22%23f2b705%22/%3E%3Cpolygon%20points%3D%2232.5%2C127.0%2035.4%2C135.0%2043.9%2C135.3%2037.2%2C140.5%2039.5%2C148.7%2032.5%2C144.0%2025.4%2C148.7%2027.7%2C140.5%2021.0%2C135.3%2029.5%2C135.0%22%20fill%3D%22%23f2b705%22/%3E%3Cpolygon%20points%3D%2222.0%2C88.0%2024.9%2C96.0%2033.4%2C96.3%2026.8%2C101.5%2029.1%2C109.7%2022.0%2C105.0%2014.9%2C109.7%2017.2%2C101.5%2010.6%2C96.3%2019.1%2C96.0%22%20fill%3D%22%23f2b705%22/%3E%3Cpolygon%20points%3D%2232.5%2C49.0%2035.4%2C57.0%2043.9%2C57.3%2037.2%2C62.5%2039.5%2C70.7%2032.5%2C66.0%2025.4%2C70.7%2027.7%2C62.5%2021.0%2C57.3%2029.5%2C57.0%22%20fill%3D%22%23f2b705%22/%3E%3Cpolygon%20points%3D%2261.0%2C20.5%2063.9%2C28.4%2072.4%2C28.7%2065.8%2C34.0%2068.1%2C42.2%2061.0%2C37.5%2053.9%2C42.2%2056.2%2C34.0%2049.6%2C28.7%2058.1%2C28.4%22%20fill%3D%22%23f2b705%22/%3E%3C/svg%3E") center/contain no-repeat;opacity:.3;pointer-events:none}
+.hero h1{color:#fff;font-size:clamp(38px,6.5vw,64px)}
+.hero .sub{color:#dbe4ff;font-size:19px}
+:root:root .hero .cta{background:#f2b705;color:#14213d}
+.hero .chip{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+.card,.box{border-radius:28px;box-shadow:0 10px 32px rgba(20,33,61,.07)}
+.card{position:relative;overflow:hidden;padding-top:26px}
+.card::before{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:linear-gradient(90deg,#1b3f94,#f2b705)}
+.card.closed::before{background:var(--line)}
+.tag{background:color-mix(in srgb,var(--blue) 10%,var(--card));border-color:transparent;font-weight:600}
+.card a.more{display:inline-block;align-self:flex-start;background:var(--blue);color:#fff;padding:9px 18px;border-radius:999px;font-size:15px}
+:root[data-theme="dark"] .card a.more{color:#0e1630}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .card a.more{color:#0e1630}}
+.card.closed a.more{background:var(--line);color:var(--muted)}
+section h2::after{content:"";display:block;width:52px;height:5px;border-radius:3px;background:#f2b705;margin-top:12px}
+.band{background:radial-gradient(circle at 90% 0,rgba(242,183,5,.3),transparent 45%),linear-gradient(135deg,#1b3f94,#0c1b4d);border-radius:36px}
+:root:root .band{color:#fff}
+.bar input,.bar select,.chip{box-shadow:0 2px 8px rgba(20,33,61,.05)}
+details{border-radius:20px}
+@media (prefers-reduced-motion:no-preference){.card,.box{transition:transform .2s,box-shadow .2s}.card:hover,.box:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(20,33,61,.12)}}
+@media (max-width:760px){.hero{padding:40px 24px;border-radius:28px}.hero::after{display:none}}
+</style>
+<style>#xidmet .box{display:flex;flex-direction:column}#xidmet .box p:last-child{margin-top:auto!important;padding-top:16px}</style><style>.logo img{width:44px;height:44px}.logo{white-space:nowrap}nav{gap:18px}nav a{white-space:nowrap}</style><style>
+  [class*="netlify"],[id*="netlify"],
+  a[href*="netlify.com"][style*="fixed"],
+  div[style*="position: fixed"][style*="bottom"][style*="right"] a[href*="netlify"]{
+    display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important;
+  }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="#"><img src="data:image/jpeg;base64,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" alt="">waytoeurope.az</a>
+<nav><a href="#">Əsas Səhifə</a><a href="#imkanlar">İmkanlar</a><a href="#haqqimizda">Haqqımızda</a><a href="#xidmet">Xidmətlər</a><a href="#beledar">Bələdçi</a><a href="#faq">FAQ</a><a href="#elaqe">Əlaqə</a></nav>
+<button class="icon" id="theme" aria-label="Rejimi dəyiş">◐</button>
+<a class="cta" href="https://www.instagram.com/waytoeurope.az" target="_blank" rel="noopener noreferrer">Bizə yaz</a>
+</div></header>
+<main class="wrap">
+<div class="hero">
+<div>
+<h1>Your Gateway to Europe</h1>
+<p class="sub">Azərbaycanlı gənclər üçün ESC və Erasmus+ könüllülük layihələri. Elanı tap, CV və məktubunu hazırla, müraciət et.</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap"><a class="cta" href="#imkanlar">Elanlara bax</a><a class="chip" style="text-decoration:none" href="#beledar">Qeydiyyat bələdçisi</a></div>
+</div>
+</div>
+<section id="niye">
+<h2>Niyə ESC?</h2>
+<div class="cards">
+<div class="box"><h3>Xərclər qarşılanır</h3><p>Yaşayış, yemək və cibxərclik adətən təşkilat tərəfindən verilir. Hər layihənin şərtlərinə ayrıca bax.</p></div>
+<div class="box"><h3>Real təcrübə</h3><p>Gənclərlə, mədəniyyət və ya ictimai layihələrdə işləyib CV-ni gücləndirirsən.</p></div>
+<div class="box"><h3>Yeni dil və dostlar</h3><p>Beynəlxalq komandada işləyib dilini inkişaf etdirirsən.</p></div>
+<div class="box"><h3>Youthpass sertifikatı</h3><p>Layihə bitəndə öyrəndiklərini təsdiq edən sənəd alırsan.</p></div>
+</div>
+</section>
+<section id="imkanlar">
+<h1>Bütün elanlar</h1>
+<p class="sub">Sənə uyğun könüllülük imkanını tap, müraciət et, inkişaf et.</p>
+<div class="bar">
+<input id="q" type="search" placeholder="Ölkə və ya layihə axtar" aria-label="Axtar">
+<select id="c" aria-label="Ölkə"><option value="">Bütün ölkələr</option></select>
+<button class="chip" id="onlyOpen" aria-pressed="false">Yalnız açıq</button>
+<button class="chip" id="onlyFav" aria-pressed="false">♥ Seçilmişlər</button>
+</div>
+<div class="grid" id="list"></div>
+</section>
+
+<section id="xidmet">
+<h2>Xidmətlərimiz və qiymətlər</h2>
+<div class="cards">
+<div class="box"><h3>ESC profilinin açılması və düzgün doldurulması</h3><p>Avropa Həmrəylik Korpusu (ESC) portalında profilinizin sıfırdan açılması, layihələrdən qəbul alma şansını artırmaq üçün bütün bölmələrin qaydalara uyğun və peşəkar şəkildə doldurulması.</p><p style="margin-top:14px;font-size:24px;font-weight:800;color:var(--blue)">20 AZN</p></div>
+<div class="box"><h3>Professional Europass CV</h3><p>Avropa standartlarına tam uyğun, layihə koordinatorlarının diqqətini çəkəcək formada, təcrübə və bacarıqlarınızın düzgün vurğulandığı CV-nin sıfırdan tərtib edilməsi.</p><p style="margin-top:14px;font-size:24px;font-weight:800;color:var(--blue)">30 AZN</p></div>
+<div class="box"><h3>Xüsusi motivasiya məktubu</h3><p>Məhz sizin seçdiyiniz layihəyə və şəxsi hədəflərinizə uyğunlaşdırılmış, şablonlardan uzaq, səmimi və təsirli motivasiya məktubunun yazılması.</p><p style="margin-top:14px;font-size:24px;font-weight:800;color:var(--blue)">15 AZN</p></div>
+</div>
+<p class="sub" style="margin-top:20px">Sifariş üçün <a href="https://www.instagram.com/waytoeurope.az" target="_blank" rel="noopener noreferrer" style="color:var(--blue);font-weight:700">Instagram</a> və ya <a href="https://mail.google.com/mail/?view=cm&fs=1&to=waytoeuropeaz@gmail.com" target="_blank" rel="noopener noreferrer" style="color:var(--blue);font-weight:700">Gmail</a> vasitəsilə bizə yaz.</p>
+</section>
+<section id="beledar">
+<h2>Qeydiyyat və müraciət</h2>
+<p class="sub">Düzgün ardıcıllıq belədir.</p>
+<ol style="margin-top:20px">
+<li><b>EU Login hesabı aç</b>webgate.ec.europa.eu/cas saytında e-poçtunla qeydiyyatdan keç.</li>
+<li><b>Europass CV hazırla</b>europa.eu/europass saytında profilini doldur və CV-ni PDF yüklə.</li>
+<li><b>ESC portalında qeydiyyatdan keç</b>youth.europa.eu/solidarity saytında “Register” düyməsinə bas.</li>
+<li><b>Layihə axtar</b>Ölkə, tarix və son müraciət tarixinə bax. Azərbaycandan qəbul edilib-edilmədiyini yoxla.</li>
+<li><b>Müraciət et</b>“Apply” düyməsi yoxdursa, təşkilata CV və qısa motivasiya məktubu göndər. 5-10 layihəyə eyni vaxtda müraciət et.</li>
+<li><b>Cavab gözlə</b>Təşkilat e-poçtla və ya onlayn görüşlə əlaqə saxlayır.</li>
+</ol>
+<div class="note">Bəzi layihələr Azərbaycandan iştirakçı qəbul etmir, bəzilərində göndərən təşkilat (Sending Organization) tələb olunur. Müraciətdən əvvəl şərtləri oxu.</div>
+</section>
+
+<section id="faq">
+<h2>Tez-tez verilən suallar</h2>
+<div style="margin-top:20px">
+<details><summary>Dil sertifikatı lazımdır?</summary><p>Çox layihədə tələb olunmur, amma bəzilərində yaxşı İngilis dili istənilir. Elanda yazılır.</p></details>
+<details><summary>Neçə layihəyə müraciət etməliyəm?</summary><p>Cavab hamıdan gəlmir, ona görə eyni vaxtda 5-10 layihəyə müraciət etmək daha yaxşıdır.</p></details>
+<details><summary>Azərbaycandan hər layihəyə müraciət etmək olar?</summary><p>Xeyr. Bəzi layihələr Azərbaycandan iştirakçı qəbul etmir, bəzilərində göndərən təşkilat (Sending Organization) tələb olunur.</p></details>
+<details><summary>Neçə yaşdan müraciət etmək olar?</summary><p>Qeydiyyat 17 yaşdan mümkündür, layihəyə isə 18-30 yaş arasında başlanır.</p></details>
+</div>
+</section>
+<div class="band"><h2>Sualın var? Bizə yaz.</h2><a class="cta" href="https://mail.google.com/mail/?view=cm&fs=1&to=waytoeuropeaz@gmail.com" target="_blank" rel="noopener noreferrer">Əlaqə</a></div>
+
+<section id="haqqimizda">
+<h2>Haqqımızda</h2>
+<p class="sub" style="max-width:68ch;font-size:18px">WayToEurope komandası olaraq 1 iyul 2026-cı il tarixindən etibarən fəaliyyət göstəririk. Əsas məqsədimiz azərbaycanlı gənclərə Avropada könüllülük imkanlarını kəşf etmək və onlara müraciət prosesində peşəkar dəstək göstərməkdir. Rəsmi portallarda yayımlanan ESC (European Solidarity Corps) və Erasmus+ layihələrini bir araya toplayaraq hər kəs üçün əlçatan və sadə dildə təqdim edirik.</p>
+<div class="cards">
+<div class="box"><h3>Aydın məlumat</h3><p>Hər elanda yer, tarix və son müraciət günü açıq yazılır. Bağlanmış layihələr avtomatik silinir.</p></div>
+<div class="box"><h3>Fərdi yanaşma</h3><p>CV və məktubu hər layihəyə və sənin hədəflərinə uyğun hazırlayırıq, şablon istifadə etmirik.</p></div>
+<div class="box"><h3>Düzgün ardıcıllıq</h3><p>EU Login-dən müraciətə qədər hər addımı izah edirik ki, vaxt və şans itirməyəsən.</p></div>
+</div>
+<div class="note" style="margin-top:20px">waytoeurope.az rəsmi Avropa İttifaqı qurumu deyil. Elanlar rəsmi portaldan götürülür, şərtləri müraciətdən əvvəl portalda yoxla.</div>
+</section>
+
+<section id="elaqe">
+<h2>Əlaqə</h2>
+<p class="sub">Müraciət üçün bizə yaz.</p>
+<div class="bar"><a class="cta" href="https://www.instagram.com/waytoeurope.az" target="_blank" rel="noopener noreferrer">Instagram</a><a class="chip" style="text-decoration:none" href="https://mail.google.com/mail/?view=cm&fs=1&to=waytoeuropeaz@gmail.com" target="_blank" rel="noopener noreferrer">Gmail</a><a class="chip" style="text-decoration:none" href="https://www.tiktok.com/@waytoeurope.az" target="_blank" rel="noopener noreferrer">TikTok</a><a class="chip" style="text-decoration:none" href="https://linktr.ee/waytoeuropeaz" target="_blank" rel="noopener noreferrer">Linktree</a></div>
+</section>
+</main>
+<footer><div class="wrap">© waytoeurope.az. Rəsmi Avropa İttifaqı saytı deyil. Şərtləri youth.europa.eu/solidarity saytında yoxla.</div></footer>
+
+<script>
+/* ELANLARI BURADAN REDAKTƏ ET. Hər sətir bir layihədir:
+   P("ölkə kodu","şəhər","ad","başlama","bitmə","son müraciət")
+   Tarixləri gün.ay.il yaz. Son müraciət yoxdursa "" yaz.
+   Ölkə kodları: tr, dk, fi, ro, de, at, es, lt, it, si, pl, be */
+var COUNTRY={tr:"Türkiye",dk:"Danimarka",fi:"Finlandiya",ro:"Rumıniya",de:"Almaniya",at:"Avstriya",es:"İspaniya",lt:"Litva",it:"İtaliya",si:"Sloveniya",pl:"Polşa",be:"Belçika"};
+var FLAG={
+tr:'<rect width="30" height="20" fill="#e30a17"/><circle cx="11" cy="10" r="5" fill="#fff"/><circle cx="12.4" cy="10" r="4" fill="#e30a17"/><polygon points="17.5,7.8 18.2,9.5 20,9.5 18.6,10.6 19.1,12.3 17.5,11.3 15.9,12.3 16.4,10.6 15,9.5 16.8,9.5" fill="#fff"/>',
+dk:'<rect width="30" height="20" fill="#c8102e"/><rect x="9" width="3.5" height="20" fill="#fff"/><rect y="8.25" width="30" height="3.5" fill="#fff"/>',
+fi:'<rect width="30" height="20" fill="#fff"/><rect x="8" width="4" height="20" fill="#003580"/><rect y="8" width="30" height="4" fill="#003580"/>',
+ro:'<rect width="10" height="20" fill="#002b7f"/><rect x="10" width="10" height="20" fill="#fcd116"/><rect x="20" width="10" height="20" fill="#ce1126"/>',
+de:'<rect width="30" height="7" fill="#000"/><rect y="7" width="30" height="6.5" fill="#dd0000"/><rect y="13.5" width="30" height="6.5" fill="#ffce00"/>',
+at:'<rect width="30" height="20" fill="#ed2939"/><rect y="6.6" width="30" height="6.8" fill="#fff"/>',
+es:'<rect width="30" height="20" fill="#aa151b"/><rect y="5" width="30" height="10" fill="#f1bf00"/>',
+lt:'<rect width="30" height="7" fill="#fdb913"/><rect y="7" width="30" height="6.5" fill="#006a44"/><rect y="13.5" width="30" height="6.5" fill="#c1272d"/>'};
+FLAG.it='<rect width="10" height="20" fill="#009246"/><rect x="10" width="10" height="20" fill="#fff"/><rect x="20" width="10" height="20" fill="#ce2b37"/>';
+FLAG.si='<rect width="30" height="7" fill="#fff"/><rect y="7" width="30" height="6.5" fill="#005da4"/><rect y="13.5" width="30" height="6.5" fill="#ed1c24"/><path d="M4.6 3h6v5.2c0 2.3-1.7 3.4-3 4-1.3-.6-3-1.7-3-4z" fill="#005da4" stroke="#ed1c24" stroke-width=".5"/><polygon points="5.4,8.6 7.6,5.4 8.4,6.6 9.1,5.9 10.2,8.6" fill="#fff"/><path d="M5.2 9.5q.8-.6 1.6 0t1.6 0 1.6 0M5.5 10.4q.8-.6 1.5 0t1.5 0 1.5 0" fill="none" stroke="#fff" stroke-width=".35"/><circle cx="6.2" cy="4.6" r=".45" fill="#fdd116"/><circle cx="9" cy="4.6" r=".45" fill="#fdd116"/><circle cx="7.6" cy="3.9" r=".45" fill="#fdd116"/>';
+FLAG.pl='<rect width="30" height="10" fill="#fff"/><rect y="10" width="30" height="10" fill="#dc143c"/>';
+FLAG.be='<rect width="10" height="20" fill="#000"/><rect x="10" width="10" height="20" fill="#fdda24"/><rect x="20" width="10" height="20" fill="#ef3340"/>';
+var PROJECTS=[];
+function P(cc,city,title,from,to,deadline,x){PROJECTS.push({id:cc+"|"+title+"|"+from,cc:cc,city:city,title:title,from:from,to:to,deadline:deadline,x:x||{}})}
+P("it","Catania","One year project in a cultural organisation (Catania, Sicily)","11.02.2027","10.02.2028","09.12.2026",{link:"https://youth.europa.eu/solidarity/opportunity/55170_en"});
+P("dk","Nykøbing F","Volunteer at Middelaldercentret","01.05.2027","31.10.2027","22.11.2026",{link:"https://youth.europa.eu/solidarity/opportunity/55013_en"});
+P("tr","Yozgat","Long-Term Volunteering Opportunity","15.01.2027","13.07.2027","15.12.2026",{link:"https://youth.europa.eu/solidarity/opportunity/54942_en"});
+P("ro","Bucharest","EPVP 7.1 - youth Campaigns and Erasmus+","15.01.2027","30.07.2027","15.11.2026",{link:"https://youth.europa.eu/solidarity/opportunity/54926_en"});
+P("at","Neumarkt","European Youth Forum in Neumarkt: organise international events for youth","01.03.2027","30.11.2027","29.11.2026",{link:"https://youth.europa.eu/solidarity/opportunity/54869_en"});
+P("si","Ljubljana","Youth in Motion (2 month volunteering)","25.01.2027","25.03.2027","31.01.2027",{link:"https://youth.europa.eu/solidarity/opportunity/54822_en"});
+P("tr","Merkez","AGESDER Volunteers - TR.2027.05.S.1","04.05.2027","01.07.2027","28.02.2027",{link:"https://youth.europa.eu/solidarity/opportunity/54043_en"});
+P("tr","Merkez","AGESDER Volunteers - TR.2027.04.S.1","20.04.2027","17.06.2027","28.02.2027",{link:"https://youth.europa.eu/solidarity/opportunity/54042_en"});
+P("tr","Merkez","AGESDER Volunteers - TR.2027.02.S.1","17.02.2027","16.04.2027","31.12.2026",{link:"https://youth.europa.eu/solidarity/opportunity/54038_en"});
+P("tr","Merkez","AGESDER Volunteers - TR.2027.03.S.1","04.03.2027","01.05.2027","31.12.2026",{link:"https://youth.europa.eu/solidarity/opportunity/54037_en"});
+P("ro","Baia Mare","“Hand in Hand for a Better Europe!” - Long Term 2027","08.01.2027","31.12.2027","15.11.2026",{link:"https://youth.europa.eu/solidarity/opportunity/45336_en"});
+P("ro","Dragasani","Live for Sport- Live for Solidarity!","01.03.2027","01.03.2028","",{link:"https://youth.europa.eu/solidarity/opportunity/41648_en"});
+P("es","Gandia","SUPPORTING LOCAL COMMUNITIES: ASMISAF/AUNA Inclusión","01.01.2027","01.01.2028","",{link:"https://youth.europa.eu/solidarity/opportunity/38973_en"});
+P("ro","","Heritage Revised — New Media Approaches to Heritage Awareness in Youth Work","23.08.2027","29.08.2027","31.05.2027",{type:"Erasmus+",noAge:true,link:"http://trainings.salto-youth.net/15241",notes:["İştirak haqqı: 70 avro"]});
+P("pl","Warsaw","From Lived Experience to Opportunity, Knowledge and Action: European Dialogue & Capacity-Building Forum 2027","23.04.2027","24.04.2027","09.03.2027",{type:"SALTO",noAge:true,link:"https://www.salto-youth.net/tools/european-training-calendar/training/from-lived-experience-to-opportunity-knowledge-and-action-european-dialogue-capacity-building-forum-2027.15346/",notes:["İştirak haqqı: 30-150 avro"]});
+P("it","Rome","TIC TAC - Training Course & Partnership Building Activity Mobility of Youth Workers","25.01.2027","31.01.2027","25.11.2026",{type:"Erasmus+",noAge:true,link:"http://trainings.salto-youth.net/15443",notes:["İştirak haqqı: Ölkəyə görə dəyişir"]});
+P("be","Antwerp","Pedagogy of the Pitch: Football as a tool","11.04.2027","15.04.2027","11.12.2026",{type:"Erasmus+",noAge:true,link:"http://trainings.salto-youth.net/15479",notes:["İştirak haqqı: Pulsuz"]});
+P("es","Tortosa","SUSTAINABLE LEADERSHIP","16.04.2027","23.04.2027","04.02.2027",{type:"Erasmus+",noAge:true,link:"https://www.salto-youth.net/tools/european-training-calendar/training/sustainable-leadership.15152/",notes:["İştirak haqqı: Pulsuz"]});
+var $=function(i){return document.getElementById(i)},d=new Date(),today=d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2),favs=[];
+try{favs=JSON.parse(localStorage.getItem("favs")||"[]")}catch(e){}
+function saveFavs(){try{localStorage.setItem("favs",JSON.stringify(favs))}catch(e){}}
+function iso(x){if(!x)return"9999-12-31";var p=x.split(".");return p[2]+"-"+p[1]+"-"+p[0]}
+function isOpen(p){return iso(p.deadline)>=today}
+var seen=[];PROJECTS.forEach(function(p){if(seen.indexOf(p.cc)<0){seen.push(p.cc);var o=document.createElement("option");o.value=p.cc;o.textContent=COUNTRY[p.cc];$("c").appendChild(o)}});
+function flag(cc){return '<svg viewBox="0 0 30 20" width="24" height="16" style="border-radius:3px;box-shadow:0 0 0 1px rgba(0,0,0,.2)" aria-hidden="true">'+FLAG[cc]+"</svg>"}
+function render(){
+var q=$("q").value.toLowerCase(),c=$("c").value,oo=$("onlyOpen").getAttribute("aria-pressed")==="true",of=$("onlyFav").getAttribute("aria-pressed")==="true";
+var l=PROJECTS.filter(function(p){return (!c||p.cc===c)&&(!oo||isOpen(p))&&(!of||favs.indexOf(p.id)>=0)&&((p.title+p.city+COUNTRY[p.cc]).toLowerCase().indexOf(q)>=0)})
+.sort(function(a,b){return isOpen(b)-isOpen(a)||iso(a.deadline).localeCompare(iso(b.deadline))});
+$("list").innerHTML=l.length?"":'<div class="empty" style="grid-column:1/-1">Bu filtrə uyğun elan tapılmadı. Yeni elanlar üçün Instagram və TikTok səhifəmizə bax.</div>';
+l.forEach(function(p){var open=isOpen(p),a=document.createElement("article");a.className="card"+(open?"":" closed");
+a.innerHTML='<div class="top"><span class="tag" style="display:inline-flex;gap:6px;align-items:center">'+flag(p.cc)+COUNTRY[p.cc]+'</span><span class="tag">'+(p.x.type||"ESC")+'</span><span class="sp"></span><button class="heart" aria-label="Seçilmişlərə əlavə et">'+(favs.indexOf(p.id)>=0?"♥":"♡")+"</button></div><h3>"+p.title+'</h3><div class="meta"><span>Yer: '+(p.city?p.city+", ":"")+COUNTRY[p.cc]+"</span><span>Tarix: "+p.from+" – "+p.to+"</span>"+(p.x.noAge?"":"<span>Yaş həddi: 18-30</span>")+(p.x.notes||[]).map(function(n){return "<span>"+n+"</span>"}).join("")+'<span class="st '+(open?"open":"shut")+'">'+(!open?"Müraciət bağlanıb":p.deadline?"Son müraciət: "+p.deadline:"Müraciət müddəti yoxdur")+'</span></div><a class="more" href="'+(p.x.link||"https://youth.europa.eu/solidarity/dashboard/opportunities_en")+'" target="_blank" rel="noopener noreferrer">'+(p.x.link?"Ətraflı bax":"Portalda bax")+'</a>';
+a.querySelector(".heart").onclick=function(){var i=favs.indexOf(p.id);i<0?favs.push(p.id):favs.splice(i,1);saveFavs();render()};
+$("list").appendChild(a)})}
+["q","c"].forEach(function(i){$(i).oninput=render});
+["onlyOpen","onlyFav"].forEach(function(i){$(i).onclick=function(){this.setAttribute("aria-pressed",this.getAttribute("aria-pressed")==="true"?"false":"true");render()}});
+$("theme").onclick=function(){var r=document.documentElement,dark=r.getAttribute("data-theme")==="dark"||(!r.getAttribute("data-theme")&&matchMedia("(prefers-color-scheme:dark)").matches);r.setAttribute("data-theme",dark?"light":"dark")};
+render();
+</script>
+<script>
+(function () {
+  function hideNetlify() {
+    document.querySelectorAll('body *').forEach(function (el) {
+      var cs = getComputedStyle(el);
+      if (cs.position === 'fixed' && parseInt(cs.bottom) < 100 && parseInt(cs.right) < 100 &&
+          (el.innerHTML || '').toLowerCase().indexOf('netlify') !== -1) {
+        el.style.setProperty('display', 'none', 'important');
+      }
+    });
+  }
+  hideNetlify();
+  new MutationObserver(hideNetlify).observe(document.documentElement, { childList: true, subtree: true });
+})();
+</script>
+</body>
+</html>

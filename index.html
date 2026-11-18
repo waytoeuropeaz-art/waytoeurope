@@ -243,6 +243,7 @@ try{favs=JSON.parse(localStorage.getItem("favs")||"[]")}catch(e){}
 function saveFavs(){try{localStorage.setItem("favs",JSON.stringify(favs))}catch(e){}}
 function iso(x){if(!x)return"9999-12-31";var p=x.split(".");return p[2]+"-"+p[1]+"-"+p[0]}
 function isOpen(p){return iso(p.deadline)>=today}
+PROJECTS=PROJECTS.filter(isOpen);
 var seen=[];PROJECTS.forEach(function(p){if(seen.indexOf(p.cc)<0){seen.push(p.cc);var o=document.createElement("option");o.value=p.cc;o.textContent=COUNTRY[p.cc];$("c").appendChild(o)}});
 function flag(cc){return '<svg viewBox="0 0 30 20" width="24" height="16" style="border-radius:3px;box-shadow:0 0 0 1px rgba(0,0,0,.2)" aria-hidden="true">'+FLAG[cc]+"</svg>"}
 function render(){

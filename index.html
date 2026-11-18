@@ -203,8 +203,9 @@ details{border-radius:20px}
    P("ölkə kodu","şəhər","ad","başlama","bitmə","son müraciət")
    Tarixləri gün.ay.il yaz. Son müraciət yoxdursa "" yaz.
    Ölkə kodları: tr, dk, fi, ro, de, at, es, lt, it, si, pl, be */
-var COUNTRY={tr:"Türkiye",dk:"Danimarka",fi:"Finlandiya",ro:"Rumıniya",de:"Almaniya",at:"Avstriya",es:"İspaniya",lt:"Litva",it:"İtaliya",si:"Sloveniya",pl:"Polşa",be:"Belçika",fr:"Fransa"};
+var COUNTRY={tr:"Türkiye",dk:"Danimarka",fi:"Finlandiya",ro:"Rumıniya",de:"Almaniya",at:"Avstriya",es:"İspaniya",lt:"Litva",it:"İtaliya",si:"Sloveniya",pl:"Polşa",be:"Belçika",fr:"Fransa",gb:"Böyük Britaniya"};
 var FLAG={
+gb:'<rect width="30" height="20" fill="#012169"/><path d="M0 0L30 20M30 0L0 20" stroke="#fff" stroke-width="4"/><path d="M0 0L30 20M30 0L0 20" stroke="#c8102e" stroke-width="1.6"/><path d="M15 0V20M0 10H30" stroke="#fff" stroke-width="6"/><path d="M15 0V20M0 10H30" stroke="#c8102e" stroke-width="3.6"/>',
 tr:'<rect width="30" height="20" fill="#e30a17"/><circle cx="11" cy="10" r="5" fill="#fff"/><circle cx="12.4" cy="10" r="4" fill="#e30a17"/><polygon points="17.5,7.8 18.2,9.5 20,9.5 18.6,10.6 19.1,12.3 17.5,11.3 15.9,12.3 16.4,10.6 15,9.5 16.8,9.5" fill="#fff"/>',
 dk:'<rect width="30" height="20" fill="#c8102e"/><rect x="9" width="3.5" height="20" fill="#fff"/><rect y="8.25" width="30" height="3.5" fill="#fff"/>',
 fi:'<rect width="30" height="20" fill="#fff"/><rect x="8" width="4" height="20" fill="#003580"/><rect y="8" width="30" height="4" fill="#003580"/>',
@@ -220,6 +221,9 @@ FLAG.pl='<rect width="30" height="10" fill="#fff"/><rect y="10" width="30" heigh
 FLAG.be='<rect width="10" height="20" fill="#000"/><rect x="10" width="10" height="20" fill="#fdda24"/><rect x="20" width="10" height="20" fill="#ef3340"/>';
 var PROJECTS=[];
 function P(cc,city,title,from,to,deadline,x){PROJECTS.push({id:cc+"|"+title+"|"+from,cc:cc,city:city,title:title,from:from,to:to,deadline:deadline,x:x||{}})}
+P("es","Madrid","European Youth Summit 2027 (CDA)","13.04.2027","16.04.2027","20.01.2027",{type:"Summit",noAge:true,link:"https://thecda.co/european-youth-summit-2027-madrid/",notes:["Yaş həddi: 18-50","Müraciət haqqı: 17 USD"]});
+P("gb","Manchester","International Youth Leadership Dialogue 2027 (IYLD)","15.04.2027","18.04.2027","15.01.2027",{type:"Summit",noAge:true,link:"https://globalfuturenetwork.com/",notes:["Yaş həddi: 16-45","Müraciət haqqı: 13.99 GBP"]});
+P("gb","London","London Youth Diplomacy Forum 2027 (YDA)","02.02.2027","04.02.2027","08.12.2026",{type:"Konfrans",noAge:true,link:"https://youthdiplomaticacademy.org/upcoming-event/fully-funded-london-youth-diplomacy-forum-2027",notes:["Müraciət haqqı: 29 USD"]});
 P("it","Catania","One year project in a cultural organisation (Catania, Sicily)","11.02.2027","10.02.2028","09.12.2026",{link:"https://youth.europa.eu/solidarity/opportunity/55170_en"});
 P("dk","Nykøbing F","Volunteer at Middelaldercentret","01.05.2027","31.10.2027","22.11.2026",{link:"https://youth.europa.eu/solidarity/opportunity/55013_en"});
 P("tr","Yozgat","Long-Term Volunteering Opportunity","15.01.2027","13.07.2027","15.12.2026",{link:"https://youth.europa.eu/solidarity/opportunity/54942_en"});
